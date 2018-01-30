@@ -181,10 +181,10 @@ public class Picture extends SimplePicture
 	  Pixel [][] toPixels = this.getPixels2D();
 	  Pixel [][] fromPixels = nukeCloud.getPixels2D();
 	  int fromRow = 0;
-	  for(int toRow = startRow; fromRow < fromPixels.length && toRow < toPixels.length; toRow++)
+	  for(int toRow = startRow; toRow < fromPixels.length && fromRow < fromPixels.length; toRow++)
 	  {
 		  int fromCol = 0;
-		  for(int toCol = startCol; fromCol < fromPixels[0].length && toCol < toPixels[0].length; toCol++)
+		  for(int toCol = startCol; toCol < fromPixels[0].length && fromCol < fromPixels[0].length; toCol++)
 		  {
 			  fromPixel = fromPixels[fromRow][fromCol];
 			  int transparentLevel = fromPixel.getAlpha();
