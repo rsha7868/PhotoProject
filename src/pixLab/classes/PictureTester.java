@@ -19,7 +19,7 @@ public class PictureTester
   }
   public static void testnukeCloud()
 {
-	Picture sample = new Picture("moon-surface.jpg");
+	Picture sample = new Picture("arch.jpg");
 	sample.explore();
 	sample.nukeCloudFilter(sample.getHeight()/2, sample.getWidth()/2);
 	sample.explore();
