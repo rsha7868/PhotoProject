@@ -255,8 +255,23 @@ public class Picture extends SimplePicture
     beach.zeroBlue();
     beach.explore();
   }
-  public void colorGlitch(Double Int)
+  public void colorGlitch(int colorGl)
   {
+	  int row = 1;
+	  int col = 1;
+	  int max = 120;
+	  int min = 20;
+	  for(max = 100; colorGl > min; colorGl++)
+	  {
+		  if(max >= 60)
+		  {
+			  
+		  }
+		  else if(min <= 60)
+		  {
+			  
+		  }
+	  }
 	  
 	  
   }
