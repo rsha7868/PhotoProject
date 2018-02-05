@@ -255,5 +255,11 @@ public class Picture extends SimplePicture
     beach.zeroBlue();
     beach.explore();
   }
+  public void colorGlitch(Double Int)
+  {
+	  
+	  
+  }
+  
   
 } // this } is the end of class Picture, put all new methods before this

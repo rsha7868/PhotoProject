@@ -19,7 +19,7 @@ public class PictureTester
   }
   public static void testnukeCloud()
 {
-	Picture sample = new Picture("arch.jpg");
+	Picture sample = new Picture("MushroomCloud.png");
 	sample.explore();
 	sample.nukeCloudFilter(sample.getHeight()/2, sample.getWidth()/2);
 	sample.explore();
@@ -57,6 +57,12 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+  public static void testColorGlitch()
+  {
+	  Picture water = new Picture("water.jpg");
+	  water.explore();
+	  water.colorGlitch();
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -88,5 +94,6 @@ public class PictureTester
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
 	  testnukeCloud();
+	  testColorGlitch();
   }
 }
