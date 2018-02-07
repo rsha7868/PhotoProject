@@ -257,23 +257,25 @@ public class Picture extends SimplePicture
   }
   public void colorGlitch(int colorGl)
   {
-	  int row = 1;
-	  int col = 1;
-	  int max = 120;
-	  int min = 20;
-	  for(max = 100; colorGl > min; colorGl++)
-	  {
-		  if(max >= 60)
-		  {
-			  
-		  }
-		  else if(min <= 60)
-		  {
-			  
-		  }
-	  }
+	 
 	  
-	  
+	 Pixel [][] pixels = this.getPixels2D();
+	 int shiftAmount = (int) (.33 * pixels[0].length);
+	 int width = pixels[0].length;
+	 
+	 for(int row = 0; row < pixels.length; row++)
+	 {
+		 Color [] currentColors = new Color[pixels[0].length];
+				 
+		for(int col = 0; col < pixels[row].length; col++)
+		{
+			currentColors[col] = pixels[row][col].getColor();
+		}
+		for(int col = 0; col < pixels[0].length; col++)
+		{
+			pixels[row][col].setColor(currentColors[(col + shiftAmount) % width]);
+		}
+	 }
   }
   
   
