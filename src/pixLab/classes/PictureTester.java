@@ -21,7 +21,7 @@ public class PictureTester
 {
 	Picture sample = new Picture("Missle.png");
 	sample.explore();
-	sample.nukeCloudFilter(sample.getHeight()/2, sample.getWidth()/2);
+	sample.nukeCloudFilter(sample.getHeight()/3, sample.getWidth()/20);
 	sample.explore();
 }
   /** Method to test mirrorVertical */

@@ -177,7 +177,7 @@ public class Picture extends SimplePicture
   {
 	  Pixel fromPixel = null;
 	  Pixel toPixel = null;
-	  Picture nukeCloud = new Picture("MissleLaunch.png");
+	  Picture nukeCloud = new Picture("Missle.png");
 	  Pixel [][] toPixels = this.getPixels2D();
 	  Pixel [][] fromPixels = nukeCloud.getPixels2D();
 	  int fromRow = 0;
