@@ -177,7 +177,7 @@ public class Picture extends SimplePicture
   {
 	  Pixel fromPixel = null;
 	  Pixel toPixel = null;
-	  Picture nukeCloud = new Picture("MushroomCloud.png");
+	  Picture nukeCloud = new Picture("MissleLaunch.png");
 	  Pixel [][] toPixels = this.getPixels2D();
 	  Pixel [][] fromPixels = nukeCloud.getPixels2D();
 	  int fromRow = 0;
@@ -199,7 +199,6 @@ public class Picture extends SimplePicture
 	  }
 	  
   }
-
   /** Method to create a collage of several pictures */
   public void createCollage()
   {
@@ -216,8 +215,6 @@ public class Picture extends SimplePicture
     this.mirrorVertical();
     this.write("collage.jpg");
   }
-  
-  
   /** Method to show large changes in color 
     * @param edgeDist the distance for finding edges
     */
@@ -243,8 +240,6 @@ public class Picture extends SimplePicture
       }
     }
   }
-  
-  
   /* Main method for testing - each class in Java can have a main 
    * method 
    */
@@ -257,8 +252,6 @@ public class Picture extends SimplePicture
   }
   public void colorGlitch(int colorGl)
   {
-	 
-	  
 	 Pixel [][] pixels = this.getPixels2D();
 	 int shiftAmount = (int) (.33 * pixels[0].length);
 	 int width = pixels[0].length;
@@ -277,6 +270,4 @@ public class Picture extends SimplePicture
 		}
 	 }
   }
-  
-  
 } // this } is the end of class Picture, put all new methods before this
